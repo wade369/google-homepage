@@ -1,56 +1,92 @@
-<html>
+<!DOCTYPE html>
     <head>
+        <title>Google</title>
+
 <style>
-ul#top li{
-    list-style-type: none;
-    display: inline;
-    padding: 10px;
-    align-items: flex-end;
+*{
+font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+padding:0;
+margin: 0;
+box-sizing: border-box;
 }
 
-a {
- text-decoration: none;
+body{
+    display:flex;
+    flex-direction: column;
+}
+nav{
+  display: flex;
+    padding-left: 32px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 14px;
 }
 
-.imageholder {
-height: 290px;
+nav a{
+font-size: 13px;
+line-height: 24px;
+display: inline-block;
+font-weight: 400;
+color: #000000;
+padding-left: 15px;
 }
 
-.image {
+nav button{
+    padding: 9px 23px 9px 23px;
+    min-width: 96px;
+    margin-left: 9px;
+    margin-right: 9px;
+    background-color: #1a73e8;
+    border-radius: 4px;
+    border-color: #1a73e8;
+   color: #ffffff;
+   outline: none;
+   border-style: solid;
+   vertical-align: middle;
+   border-width: 1px;
+   font-size: 14px;
+   line-height: 16px;
+   font-weight: 500;
+   text-align: center;
+}
 
+section{}
 }
 </style>
 
     </head>
-    <body>
-<!---Top menu--->
-<div>
-    <ul id="top">
-<li><a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="blank">Gmail</a></li>
-<li><a href="https://www.google.co.nz/imghp?hl=en&ogbl" target="_blank" >Images</a></li>
-<li><a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fhl%3Den%26sa%3DX%26ved%3D0ahUKEwiu3ofMqo3zAhXr3jgGHb73AkcQPAgI&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">Sign In</a></li>
-    </ul>
-</div>
+  
+    <body>   
+
+        <nav>
+            <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="blank">Gmail</a>
+            <a href="https://www.google.co.nz/imghp?hl=en&ogbl" target="_blank" >Images</a>
+            <img src="google-homepage/img/g-menu.png">
+            <button href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fhl%3Den%26sa%3DX%26ved%3D0ahUKEwiu3ofMqo3zAhXr3jgGHb73AkcQPAgI&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">Sign In</button>
+        </nav>
+
 <!---Image Container Div-->
-<div class="imageholder">
+<section>
         <!---Image-->
         <div>
 <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/284f0cdc998be7e4751e29e8458323ad5d320303/foundations/the_front_end/project_html_css/imgs/00.png" />
         </div>
-    </div>
 <!---Search Box--->
-<div>
+<form>
+    <div>
    <input type="text" title="Search">
-</div>
-<!---Buttons--->
-<div>
     <input value="Google Search" type="submit" title="Search Button">
     <input value="I'm Feeling Lucky" type="submit" title="Lucky Button">
  </div>
+</form>
+
 <!---Text--->
 <div>
 <p>Have questions about the COVID-19 vaccine? <a target="_blank" href="https://www.google.com/search?q=covid+vaccine&utm_source=google&utm_medium=HPP&utm_campaign=covid_vaccine_nz_en_desktop&utm_id=covid_vaccine_nz_en_desktop" >Get the Facts</a></p>
- </div>
+</div>
+</section>
 
     </body>
 </html>

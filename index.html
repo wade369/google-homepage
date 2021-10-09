@@ -30,7 +30,8 @@ line-height: 24px;
 display: inline-block;
 font-weight: 400;
 color: #000000;
-padding-left: 15px;
+padding: 5px 6.7px;
+
 }
 
 nav button{
@@ -51,9 +52,63 @@ nav button{
    font-weight: 500;
    text-align: center;
 }
-
-section{}
+nav img {
+    width: 34px;
+    padding: 5px;
+    margin: auto 7px;
 }
+
+.section-1 {
+    flex: 1;
+}
+
+.logo {
+display:block;
+margin: 0px auto;
+margin-top: 107px;
+}
+
+.sbox {
+    max-width: 580px;
+	margin: 0px auto;
+	position: relative;
+	margin-top: -8px;
+	text-align: center;
+}
+
+.sbox .s-input {
+	display: block;
+	border: 1px solid #ddd;
+	color: rgba(0,0,0, 0.87);
+	font-size: 16px;
+	padding: 13px;
+	padding-left: 45px;
+	border-radius: 25px;
+	width: 100%;
+	transition: box-shadow 100ms;
+	outline: none;
+}
+
+.s-btn {
+	border: 1px solid transparent;
+	padding: 9px 15px;
+	color: #666;
+	font-size: 14px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 28px;
+	outline: none;
+	cursor: pointer;
+	transition: border-color 100ms;
+}
+.footer{
+    margin-top: 30px;
+	text-align: center;
+	font-size: 13px;
+	color: #111;
+}
+ }
 </style>
 
     </head>
@@ -63,27 +118,25 @@ section{}
         <nav>
             <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="blank">Gmail</a>
             <a href="https://www.google.co.nz/imghp?hl=en&ogbl" target="_blank" >Images</a>
-            <img src="google-homepage/img/g-menu.png">
+            <img src="https://raw.githubusercontent.com/wade369/google-homepage/main/img/g-menu.png">
             <button href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fhl%3Den%26sa%3DX%26ved%3D0ahUKEwiu3ofMqo3zAhXr3jgGHb73AkcQPAgI&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">Sign In</button>
         </nav>
 
 <!---Image Container Div-->
-<section>
+<section class="section-1">
         <!---Image-->
-        <div>
-<img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/284f0cdc998be7e4751e29e8458323ad5d320303/foundations/the_front_end/project_html_css/imgs/00.png" />
-        </div>
-<!---Search Box--->
+<img class="logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/284f0cdc998be7e4751e29e8458323ad5d320303/foundations/the_front_end/project_html_css/imgs/00.png" />
+       <!---Search Box--->
 <form>
-    <div>
-   <input type="text" title="Search">
-    <input value="Google Search" type="submit" title="Search Button">
-    <input value="I'm Feeling Lucky" type="submit" title="Lucky Button">
+    <div class="sbox">
+    <input  type="text" title="Search" class="s-input">
+    <input class="s-btn" value="Google Search" type="submit" title="Search Button">
+    <input class="s-btn" value="I'm Feeling Lucky" type="submit" title="Lucky Button">
  </div>
 </form>
 
 <!---Text--->
-<div>
+<div class="footer">
 <p>Have questions about the COVID-19 vaccine? <a target="_blank" href="https://www.google.com/search?q=covid+vaccine&utm_source=google&utm_medium=HPP&utm_campaign=covid_vaccine_nz_en_desktop&utm_id=covid_vaccine_nz_en_desktop" >Get the Facts</a></p>
 </div>
 </section>
